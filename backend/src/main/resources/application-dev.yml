@@ -1,0 +1,23 @@
+server:
+  port: <port>
+
+spring:
+
+  datasource:
+    url: jdbc:postgresql://<domain>:<port>/<db_name>
+    username: username
+    password: password
+
+  jpa:
+    show-sql: true
+
+    hibernate:
+      ddl-auto: validate
+
+  flyway:
+    enabled: true
+
+jwt:
+  secret-key: <secret>
+
+  expiration: <expiration>
