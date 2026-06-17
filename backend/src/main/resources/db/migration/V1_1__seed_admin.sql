@@ -28,7 +28,7 @@ VALUES
      'admin',
      '$2a$12$SGWsWo9mCNZCQeggeobShOI6rkuRZhucq5QSMoqnqOGpb2fmd3sKG',
      'Admin',
-     '20dc8d5a-e30a-4b12-b6d7-2fd050a6a109',
+     (SELECT id FROM roles WHERE code = 'ADMIN'),
      true,
      now(),
      now()

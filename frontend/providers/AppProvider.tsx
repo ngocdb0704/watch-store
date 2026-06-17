@@ -10,7 +10,9 @@ export const AppProvider = ({ children }: { children: React.ReactNode }) => {
         <ReduxProvider>
             <QueryProvider>
                 <ThemeProvider>
-                    <AntdProvider>{children}</AntdProvider>
+                    <AntdProvider>
+                        {children}
+                    </AntdProvider>
                 </ThemeProvider>
             </QueryProvider>
         </ReduxProvider>

@@ -3,3 +3,6 @@ spring:
     name: backend
   profiles:
     active: dev
+  flyway:
+    baseline-on-migrate: true
+    baseline-version: 1
